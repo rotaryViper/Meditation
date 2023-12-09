@@ -15,6 +15,16 @@
 	height: 98vh;
 }
 
+.title {
+	position: absolute;
+
+	top: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+
+	font-size: 4rem;
+}
+
 .fluidSim {
 	position: absolute;
 	width: 100%;
@@ -47,21 +57,7 @@
     to { transform: rotate(360deg);}
 }
 
-.title {
-	position: absolute;
-
-	top: 2rem;
-	left: 50%;
-	transform: translateX(-50%);
-
-	font-size: 4rem;
-}
-
-
-/*
- * 	Study videos
- */
- .videos {
+.sideTabs {
 	position: absolute;
 	font-size: 3rem;
 	padding: 1rem;
@@ -69,17 +65,25 @@
 
 	height: 4rem;
 
-	top: 50%;
-	left: 5%;
-	transform: translateY(-50%);
-
 	color: black;
-	background-color: rgba(173, 216, 230, .6);
+	text-decoration: none;
+}
 
+.sideTabs p {
 	transition: 1s ease-in-out;
 }
 
-.videos p {
+
+/*
+ * 	Study videos
+ */
+ .videos {
+	left: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+
+	background-color: rgba(173, 216, 230, .6);
+
 	transition: 1s ease-in-out;
 }
 
@@ -99,24 +103,12 @@
  *	Timer
  */
 .timer {
-	position: absolute;
-	font-size: 3rem;
-	padding: 1rem;
-	border-radius: 1rem;
-
-	height: 4rem;
-
-	top: 50%;
 	right: 5%;
+	top: 50%;
 	transform: translateY(-50%);
 
-	color: black;
 	background-color: rgba(255, 200, 128, .6);
 
-	transition: 1s ease-in-out;
-}
-
-.timer p {
 	transition: 1s ease-in-out;
 }
 
@@ -128,6 +120,31 @@
 
 
 .timer:hover p {
+	scale: .25;
+	translate: -40% 0;
+}
+
+/*
+ *	Stopwatch
+ */
+.stopwatch {
+	right: 5%;
+	bottom: 30%;
+	transform: translateY(-50%);
+
+	background-color: rgba(255, 200, 128, .6);
+
+	transition: 1s ease-in-out;
+}
+
+.stopwatch:hover {
+	scale: 4;
+	translate: 150% 150%;
+	border-radius: 100rem 0 0 100rem;
+}
+
+
+.stopwatch:hover p {
 	scale: .25;
 	translate: -40% 0;
 }
